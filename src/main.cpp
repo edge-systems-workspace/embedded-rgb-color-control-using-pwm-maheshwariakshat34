@@ -13,3 +13,11 @@ void setup() {
 
     Serial.println("RGB System Initialized");
 }
+void loop() {
+
+    digitalWrite(redPin, HIGH);
+    delay(1000);
+
+    digitalWrite(redPin, LOW);
+    delay(1000);
+}
