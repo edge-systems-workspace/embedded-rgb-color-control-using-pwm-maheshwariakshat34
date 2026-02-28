@@ -15,9 +15,15 @@ void setup() {
 }
 void loop() {
 
+    // Digital mode
     digitalWrite(redPin, HIGH);
     delay(1000);
-
     digitalWrite(redPin, LOW);
+    delay(1000);
+
+    // PWM Red
+    analogWrite(redPin, 255);
+    analogWrite(greenPin, 0);
+    analogWrite(bluePin, 0);
     delay(1000);
 }
