@@ -26,4 +26,16 @@ void loop() {
     analogWrite(greenPin, 0);
     analogWrite(bluePin, 0);
     delay(1000);
+
+    // PWM Green
+    analogWrite(redPin, 0);
+    analogWrite(greenPin, 255);
+    analogWrite(bluePin, 0);
+    delay(1000);
+
+    // PWM Blue
+    analogWrite(redPin, 0);
+    analogWrite(greenPin, 0);
+    analogWrite(bluePin, 255);
+    delay(1000);
 }
